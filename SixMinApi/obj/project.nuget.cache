@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "asKxHsbwIbrPx9g8NpuTp4ZG/uXT67HpInRXStBPntd2mL5jT2d7mhCzwJ4VDZ+LAtBYy3SPmxH48oQk3VchDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TranterAdmin\\Documents\\GitHub\\dot-mv-api\\SixMinApi\\SixMinApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TranterAdmin\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+    "C:\\Users\\TranterAdmin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\TranterAdmin\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\TranterAdmin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\TranterAdmin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\TranterAdmin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\TranterAdmin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
