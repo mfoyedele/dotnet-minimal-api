@@ -11,6 +11,5 @@ namespace SixMinApi.Data
         }
 
         public DbSet<Command> Commands => Set<Command>();
-
     }
 }
