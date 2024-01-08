@@ -1,10 +1,17 @@
+using Microsoft.EntityFrameworkCore;
 using SixMinApi.Models;
 
 namespace SixMinApi.Data
 {
     public class CommandRepo : ICommandRepo
     {
-        public Task CreateCommand(Command cmd)
+        private readonly AppDbContext _context;
+
+        public CommandRepo(AppDbContext context)
+        {
+           _context = context; 
+        }
+        public async Task CreateCommand(Command cmd)
         {
             throw new NotImplementedException();
         }
@@ -14,19 +21,19 @@ namespace SixMinApi.Data
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Command>> GetAllCommands()
+        public async Task<IEnumerable<Command>> GetAllCommands()
+        {
+            return await _context.Commands.ToListAsync();
+        }
+
+        public async Task<Command?> GetCommandById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Command?> GetCommandById(int id)
+        public async Task SaveChanges()
         {
-            throw new NotImplementedException();
-        }
-
-        public Task SaveChanges()
-        {
-            throw new NotImplementedException();
+            await _context.SaveChangesAsync();
         }
     }
 }
