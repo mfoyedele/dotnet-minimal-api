@@ -11,7 +11,7 @@ using SixMinApi.Data;
 namespace SixMinApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240107202418_initialmigration")]
+    [Migration("20240108095340_initialmigration")]
     partial class initialmigration
     {
         /// <inheritdoc />
