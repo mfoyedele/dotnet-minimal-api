@@ -2,7 +2,7 @@ using SixMinApi.Models;
 
 namespace SixMinApi.Data
 {
-    public interface IcommandRepo
+    public interface ICommandRepo
     {
     Task SaveChanges();
     Task<Command?> GetCommandById(int id);
