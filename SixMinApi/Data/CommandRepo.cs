@@ -13,7 +13,12 @@ namespace SixMinApi.Data
         }
         public async Task CreateCommand(Command cmd)
         {
-            throw new NotImplementedException();
+             if(cmd == null)
+            {
+                throw new ArgumentNullException(nameof(cmd));
+            }
+
+            await _context.AddAsync(cmd);
         }
 
         public void DeleteCommand(Command cmd)
@@ -28,7 +33,7 @@ namespace SixMinApi.Data
 
         public async Task<Command?> GetCommandById(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Commands.FirstOrDefaultAsync(c => c.Id == id);
         }
 
         public async Task SaveChanges()
