@@ -15,6 +15,7 @@ var sqlConBuilder = new SqlConnectionStringBuilder
 };
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(sqlConBuilder.ConnectionString));
+builder.Services.AddScoped<ICommandRepo, CommandRepo>();
 
 var app = builder.Build();
 
