@@ -4,10 +4,8 @@
 
 namespace SixMinApi.Migrations
 {
-    /// <inheritdoc />
-    public partial class initialmigration : Migration
+    public partial class Initialmigration : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -26,7 +24,6 @@ namespace SixMinApi.Migrations
                 });
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

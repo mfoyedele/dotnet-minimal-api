@@ -11,18 +11,17 @@ using SixMinApi.Data;
 namespace SixMinApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240108095340_initialmigration")]
-    partial class initialmigration
+    [Migration("20240114011218_Initialmigration")]
+    partial class Initialmigration
     {
-        /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.0")
+                .HasAnnotation("ProductVersion", "6.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("SixMinApi.Models.Command", b =>
                 {
@@ -30,7 +29,7 @@ namespace SixMinApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CommandLine")
                         .IsRequired()
